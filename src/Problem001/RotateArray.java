@@ -10,7 +10,7 @@ package Problem001;
 * How many different ways do you know to solve this problem?
 * */
 
-public class Rotate {
+public class RotateArray {
 
     // TODO: Aplicar generico en la funcion
 

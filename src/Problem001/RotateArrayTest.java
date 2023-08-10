@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RotateTest {
+class RotateArrayTest {
 
     @Test
     void rotateTwoSteps() {
@@ -14,7 +14,7 @@ class RotateTest {
 
         int[] expected = {6, 7, 1, 2, 3, 4, 5};
 
-        assertArrayEquals(expected, Rotate.rotateArray(array, steps));
+        assertArrayEquals(expected, RotateArray.rotateArray(array, steps));
 
     }
 
@@ -26,7 +26,7 @@ class RotateTest {
 
         int[] expected = {3, 4, 5, 6, 7, 1, 2};
 
-        assertArrayEquals(expected, Rotate.rotateArray(array, steps));
+        assertArrayEquals(expected, RotateArray.rotateArray(array, steps));
 
     }
 
@@ -38,7 +38,7 @@ class RotateTest {
 
         assertThrowsExactly(
                 IllegalArgumentException.class,
-                () -> Rotate.rotateArray(array, steps),
+                () -> RotateArray.rotateArray(array, steps),
                 "El parametro nSteps debe ser mayor o igual a 0"
         );
 
@@ -49,7 +49,7 @@ class RotateTest {
 
         int[] array = {1, 2, 3, 4, 5, 6, 7};
         int steps = array.length * 15;
-        assertArrayEquals(array, Rotate.rotateArray(array, steps));
+        assertArrayEquals(array, RotateArray.rotateArray(array, steps));
 
     }
 
