@@ -1,4 +1,4 @@
-package Problem1;
+package Problem001;
 
 import org.junit.jupiter.api.Test;
 
@@ -36,7 +36,11 @@ class RotateTest {
         int[] array = new int[0];
         int steps = 5;
 
-        assertThrowsExactly(IllegalArgumentException.class, () -> Rotate.rotateArray(array, steps));
+        assertThrowsExactly(
+                IllegalArgumentException.class,
+                () -> Rotate.rotateArray(array, steps),
+                "El parametro nSteps debe ser mayor o igual a 0"
+        );
 
     }
 

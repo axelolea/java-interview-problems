@@ -1,4 +1,4 @@
-package Problem1;
+package Problem001;
 
 /*
 * Problem 1
@@ -47,10 +47,8 @@ public class Rotate {
 
         int[] rotateArray = new int[arrLength];
 
-        int pos;
-
         for (int i = 0; i < arrLength; i++) {
-            pos = (i + nSteps) % arrLength;
+            int pos = (i + nSteps) % arrLength;
             rotateArray[pos] = arrayValues[i];
         }
 
